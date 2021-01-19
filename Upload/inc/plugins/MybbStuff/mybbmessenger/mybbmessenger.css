@@ -1,0 +1,503 @@
+html,body {
+	background: #f5f5ff;
+	overflow: hidden;
+	width: 100%;
+    min-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.alphabet {
+	background: #5876ab;
+	color: #fff;
+	padding: 6px;
+}
+
+.alphabet a {
+	color: #fff;
+	padding: 6px 10px;
+	font-size: 14px;
+}
+
+.alphabet span {
+	font-size: 14px;
+}
+
+.alphabet a:hover {
+	background: #415d8d;
+	text-decoration: none;
+}
+
+
+.bdy {
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+#chathead, #chatlist_main {
+    right: 0;
+    z-index: 99999;
+	height: 100%;
+	width: 100%;
+    background: #f5f5ff;
+    color: #000;
+    word-break: break-word;
+    border-radius: 6px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#chatform {
+	position: absolute;
+	bottom: 0;
+}
+
+#chatform input {
+	display: inline-block;
+}
+
+#chatbody {
+	margin-top: 2px;
+    height: 350px;
+    overflow-y: auto;
+    clear: both;
+    padding: 2px 4px;
+    word-break: break-word;
+}
+#chatbody img {
+	max-width: 80%;
+	height: auto;
+}
+
+.wholemsg, .pwholemsg {
+	padding: 0px;
+	font-size: 13px;
+	font-weight: bold;
+	word-break: break-word;
+	white-space: nowrap;
+	vertical-align: top;
+	clear: both;
+}
+
+.pwholemsg {
+	padding: 6px 0px;
+}
+
+.msgbx, .pmhmsg {
+	font-weight: normal;
+	background: #e1e3f4;
+	width: fit-content;
+	padding: 6px 10px;
+	border-radius: 12px;
+	display: inline-block;
+	word-break: break-word;
+	white-space: normal;
+	max-width: 70%;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: left;
+}
+
+.pmhmsg {
+	margin-right: 13px;
+}
+
+
+
+.username {
+	position: relative;
+	vertical-align: middle;
+	display: inline-block;
+	padding-right: 4px;
+	cursor: pointer;
+}
+
+.pphead {
+	width: 28px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+html, body {
+	margin: 0;
+}
+
+#chatform input[type="text"] {
+	margin-left: 6px;
+	padding: 4px 6px;
+	height: 30px;
+	background: #f5f5ff;
+	border-radius: 12px;
+	border: 1px solid #ccc;
+	width: 70%;
+}
+
+#chatform input[type="text"]:hover, #chatform input[type="text"]:focus {
+	outline: 0;
+	border: 1px solid green;
+}
+
+#send {
+	background: #1c89ff;
+	color: #fff;
+	border: 1px solid #e1e2f3;
+	height: 30px;
+	padding: 0 10px;
+	border-radius: 18px;
+	cursor: pointer;
+}
+
+#send:hover, #send:focus {
+	outline: 0;
+	background: #262626;
+}
+
+.buddylist_whole {
+	padding: 4px;
+	text-align: left;
+}
+
+.buddy_avatar {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.buddy_username {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.buddy_avatar img {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+#chatlist_tabs, #pChat {
+	margin-top: 2px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    clear: both;
+    padding: 2px 4px;
+    word-break: break-word;
+    background: #f5f5ff;
+    height: 430px;
+}
+
+#pMainHead, #pChat {
+	margin-top: 2px;
+    height: 450px;
+    clear: both;
+    padding: 2px 4px;
+    word-break: break-word;
+    background: #f5f5ff;
+}
+
+#pChat {
+	display: none;
+	overflow: hidden;
+}
+
+#pChild {
+	height: 370px;
+	clear: both;
+	padding: 2px 4px;
+	word-break: break-word;
+	overflow-y: scroll;
+	position: relative;
+}
+
+.buddy_status, .buddy_status2 {
+	width: initial !important;
+	height: initial !important;
+	vertical-align: bottom !important;
+	margin: 0 !important;
+	padding: 0 !important;
+    margin-left: -12px !important;
+    margin-bottom: -2px !important;
+    border: 2px solid #fff;
+}
+
+.buddy_status2 {
+	margin-left: -19px !important;
+	border-radius: 50%;
+}
+
+.chatTitle {
+	width: 100%;
+	background: url("../../../../images/tcat.png");
+	color: #fff;
+}
+
+.chatTitle div {
+	padding: 1%;
+}
+
+.chatTab {
+	display: inline-block;
+	width: 48%;
+	background: #f5f5ff;
+	cursor: pointer;
+	color: #000;
+	font-weight: bold;
+}
+
+.activeTab {
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	height: 38px;
+	vertical-align: middle;
+	line-height: 38px;
+	cursor: pointer;
+	float: right;
+}
+
+.chatTab span {
+	position: absolute;
+	top: 16px;
+	margin-left: 8px;
+}
+
+.chatTab img {
+	width: 34px;
+	height: 34px;
+	vertical-align: middle;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+
+.tab1ChatList {
+display: block;
+}
+
+.tab2BuddyList {
+display: none;
+}
+
+#pAHead .Awholechatdiv {
+	text-align: center;
+	height: 400px;
+}
+
+.Awholechatdiv {
+	min-height: 250px;
+}
+
+#pAHead .Awholechatdiv img {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+}
+
+#aChatForm, #pmhForm {
+	position: absolute;
+	bottom: 20px;
+	width: 96%;
+	left: 0px;
+}
+
+
+#aChatForm input[type="text"], #pmhForm input[type="text"] {
+	margin-left: 6px;
+	padding: 4px 6px;
+	height: 30px;
+	background: #f5f5ff;
+	border-radius: 12px;
+	border: 1px solid #ccc;
+	width: 70%;
+}
+
+#aChatForm input[type="text"]:hover, #aChatForm input[type="text"]:focus, #pmhForm input[type="text"]:hover, #pmhForm input[type="text"]:focus {
+	outline: 0;
+	border: 1px solid green;
+}
+
+#aChatForm input[type="submit"], #pmhForm input[type="submit"] {
+	background: #1c89ff;
+	color: #fff;
+	border: 1px solid #e1e2f3;
+	height: 30px;
+	padding: 0 10px;
+	border-radius: 18px;
+	cursor: pointer;
+	width: fit-content;
+	margin-left: 2%;
+}
+
+#aChatForm input[type="submit"]:hover, #aChatForm input[type="submit"]:focus, #pmhForm input[type="submit"]:hover, #pmhForm input[type="submit"]:focus {
+	outline: 0;
+	background: #262626;
+}
+
+.pmhavatar {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	vertical-align: bottom;
+	margin-right: 10px;
+}
+
+.chatlistdiv {
+	width: 100%;
+	padding: 6px 2px;
+	margin: 4px 0;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.chat_avt {
+	float: left;
+}
+
+.chat_msg {
+	text-align: left;
+	float: left;
+}
+
+.chatlistdiv:hover {
+	background: #e1e2f3;
+}
+
+.chatlistimg {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.chatlistusername {
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.chatlistdiv span {
+	font-weight: normal;
+	font-size: 12px;
+	color: #aaa9ad;
+	display: block;
+	margin-left: 5px;
+    margin-top: 5px;
+}
+
+.smimg {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	vertical-align: bottom;
+}
+
+#dum  {
+	display: none;
+	width: 100%;
+	background: #5876ab;
+	padding: 4px 6px;
+	position: relative;
+	overflow: hidden;
+}
+
+.chatTitleImg {
+	width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    float: left;
+}
+
+.udiv {
+	display: inline-block;
+	font-weight: bold;
+	float: left;
+	line-height: 24px;
+}
+
+#dum span {
+	cursor: pointer;
+}
+
+.buddylist_infotext {
+	font-size: 10px;
+	padding: 4px;
+	margin-bottom: 4px;
+	display: block;
+	text-align: center;
+	background: #e1e4f3;
+}
+
+
+.md {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    z-index: 999;
+    padding: 5px;
+    background: green;
+    border-radius: 50%;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 2px solid #222;
+}
+
+.md a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.md a i {
+	line-height: 35px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.pmhmsg img {
+	vertical-align: middle;
+	height: 14px;
+	width: auto;
+}
+
+.imagepmsent {
+	width: 100% !important;
+	height: auto !important;
+}
+
+#pmcancelfile .fa-times {
+	background: #ccc;
+	padding: 4px;
+	color: red;
+	border-radius: 50%;
+}
+
+.pmhFormbtn {
+	position: relative;
+	width: 34px;
+	height: 34px;
+	vertical-align: top;
+	border: 0;
+	background: transparent;
+}
+
+#pmhFormbtn:hover, #pmhFormbtn:focus {
+	border: 0;
+	outline: 0;
+}
+
+#pmhFormbtn {
+	width: 30px;
+	height: auto;
+	vertical-align: top;
+}
